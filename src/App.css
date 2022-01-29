@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+.navbar-brand{
+padding-left: 50px;  
+}
+#navbarNav{
+display:flex;
+flex-direction: row;
+justify-content: right;
+}
+.navbar-nav{
+  margin-right: 50px;
+}
+.nav-item{
+margin-right: 40px;
+}
+#color-item{
+  color: #ffffff;
+}
