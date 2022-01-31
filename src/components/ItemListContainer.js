@@ -1,8 +1,9 @@
-import {Wrapper} from '.styledComponents';
+//import {Wrapper} from '.styledComponents';
 
 const ItemListContainer =({greeting})=>{
     return(
-<Wrapper>{greeting}</Wrapper>
-    )
+//<Wrapper>{greeting}</Wrapper>
+<h5>{greeting}</h5>
+    );
 }
 export default ItemListContainer;
