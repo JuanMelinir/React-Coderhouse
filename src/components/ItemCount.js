@@ -15,21 +15,21 @@ const ItemCount=({stock,initial})=>{
         }
     } 
     const addToCart=()=>{
-        console.log("Producto agregado!!");
+        alert("Producto agregado!!");
     } 
     useEffect(()=>{
     console.log();
     },[contador]);
     
     return(
-<div class="form">
+<div className="form">
 <h6>Producto1</h6>
-  <div class="input-group-prepend contador">
-    <button class="btn btn-outline-primary" type="button" onClick={decrement}>-</button>
-    <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1"><p>{contador}</p></input>
-    <button class="btn btn-outline-primary" type="button" onClick={increment}>+</button>
+  <div className="input-group-prepend contador">
+    <button className="btn btn-outline-primary" type="button" onClick={decrement}>-</button>
+    <input type="text" className="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1" value={contador}></input>
+    <button className="btn btn-outline-primary" type="button" onClick={increment}>+</button>
   </div>
-  <button class="btn btn-primary" type="button" onClick={addToCart}>ADD TO CART</button>
+  <button className="btn btn-primary" type="button" onClick={addToCart}>ADD TO CART</button>
 </div>
     );
 }
