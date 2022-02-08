@@ -66,3 +66,7 @@ margin-right: 40px;
   margin-top: 5px;
   margin-bottom: 5px;
 }
+.contenedorItem{
+  width: 10%;
+  background-color: darkgray;
+}
