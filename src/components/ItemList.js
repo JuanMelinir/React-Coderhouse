@@ -10,6 +10,7 @@ return(
     title={item.title}
     pictureUrl={item.pictureUrl}
     price={item.price}
+    stock={item.stock}
     /> 
     ) 
     }
