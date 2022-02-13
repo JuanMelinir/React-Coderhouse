@@ -9,6 +9,7 @@ return(
     key={item.id}
     title={item.title}
     pictureUrl={item.pictureUrl}
+    description={item.description}
     price={item.price}
     stock={item.stock}
     /> 

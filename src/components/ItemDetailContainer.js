@@ -1,8 +1,12 @@
-import ItemList from "./ItemList";
-import { useEffect,useState } from "react";
-//const {elements} = require("./Productos");
+import { useEffect, useState } from "react";
+import ItemDetail from "./ItemDetail";
+//import productos from "./Productos";
 
-const ItemListContainer =({greeting})=>{
+const {elements} = require("./Productos");
+//import {elements,getItem} from "./Productos";
+
+const ItemDetailContainer =()=>{
+    
     const elements=[
         {
             id:1 ,
@@ -47,32 +51,23 @@ const ItemListContainer =({greeting})=>{
             stock:"5"
         }
     ];
-    const [items,setItems]=useState([]);
+    const [dato,setDato]=useState([]);
 
-    const customFetch=(elements,timeout)=>{
-        return new Promise((res)=>
-              setTimeout(()=>{
-                   res(elements)
-              },timeout)
-        );
- }
-    
-    //TODO:componentDidMount
+    const getItem=(elements,timeout)=>new Promise((res)=>
+          setTimeout(()=>{
+               res(elements)
+          },timeout)
+    );
+
     useEffect(()=>{
-            customFetch(elements,20000)
-            .then(result=>setItems(result))
-            .catch(error=>console.log(error))
-  
+        getItem(elements[1],20000)
+        .then(result=>setDato(result))
+        .catch(error=>console.log(error))
+        
     },[]);
 
-
     return(
-        <>
-        <h5>{greeting}</h5>
-        <div className="contenedorItems">
-        <ItemList items={items}/>
-        </div>
-        </>
-    );
+     <ItemDetail items={dato}/>   
+    )
 }
-export default ItemListContainer;
+export default ItemDetailContainer;
