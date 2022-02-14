@@ -4,7 +4,7 @@ const ItemDetail=({item})=>{
     return(
         <>
         {
-        item.map(item=>
+       
         <Item 
         key={item.id}
         title={item.title}
@@ -13,7 +13,7 @@ const ItemDetail=({item})=>{
         price={item.price}
         stock={item.stock}
         /> 
-        ) 
+       
         }
         </>
         );
