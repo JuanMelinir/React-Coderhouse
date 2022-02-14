@@ -20,7 +20,7 @@ const ItemDetailContainer =()=>{
             id:2 ,
             title:"Ataque de titanes" ,
             pictureUrl:"https://i.postimg.cc/CZBwd1nn/AT001.png" ,
-            description:"100% algodón, estampa hecha con transfer importado de calidad.",
+            description:"El adolescente Eren Jaeger, tras sufrir la destrucción de su ciudad y la pérdida de su madre a manos de los Titanes, dedicará su tiempo a destruirlos y acabar con esa amenaza que pone en peligro la supervivencia de la humanidad. Serie creada por Hajime Isayama. Producida por Will Studio y MAPPA.",
             price:"2500",
             stock:"5"
         },
@@ -66,7 +66,7 @@ const ItemDetailContainer =()=>{
     );
 
     useEffect(()=>{
-        customFetch(elements[1],20000)
+        customFetch(elements[1],2000)
         .then(result=>setDato(result))
         .catch(error=>console.log(error))
         

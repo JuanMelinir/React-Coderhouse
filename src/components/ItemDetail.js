@@ -4,15 +4,18 @@ const ItemDetail=({item})=>{
     return(
         <>
         {
-       
-        <Item 
-        key={item.id}
-        title={item.title}
-        pictureUrl={item.pictureUrl}
-        description={item.description}
-        price={item.price}
-        stock={item.stock}
-        /> 
+        <div className="contenedorItemDescripcion">
+        <div className="contenedorItem">
+        <h5 className="textPrecio">{item.title}</h5>
+        <img src={item.pictureUrl} alt={item.title}/>
+        </div>
+        <div className="contenedorItemDetalles">
+        <h6 className="textDescripcion">{item.description}</h6>
+        <h3 className="textPrecio">{item.price}</h3>
+        </div>
+        
+        
+        </div>
        
         }
         </>
