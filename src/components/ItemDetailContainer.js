@@ -7,7 +7,7 @@ const {elements} = require("./Productos");
 
 const ItemDetailContainer =()=>{
 
-    const elements=[
+    /*const elements=[
         {
             id:1 ,
             title:"StormTroopers" ,
@@ -56,7 +56,7 @@ const ItemDetailContainer =()=>{
             price:"2500",
             stock:"5"
         }
-    ];
+    ];*/
     const [dato,setDato]=useState({});
 
     const customFetch=(elements,timeout)=>new Promise((res)=>

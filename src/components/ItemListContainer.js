@@ -1,9 +1,9 @@
 import ItemList from "./ItemList";
 import { useEffect,useState } from "react";
-//const {elements} = require("./Productos");
+const {elements} = require("./Productos");
 
 const ItemListContainer =({greeting})=>{
-    const elements=[
+    /*const elements=[
         {
             id:1 ,
             title:"StormTroopers" ,
@@ -52,7 +52,7 @@ const ItemListContainer =({greeting})=>{
             price:"2500",
             stock:"5"
         }
-    ];
+    ];*/
     const [items,setItems]=useState([]);
 
     const customFetch=(elements,timeout)=>{
