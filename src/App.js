@@ -12,8 +12,11 @@ const App=() =>{
     <div>
     <Navbar/>
     <Routes>
+      //TODO: Lista de todos los productos de nuestro ecommerce
       <Route path="/" element={<ItemListContainer />}></Route>
+      //TODO: Muestra el detalle de un item
       <Route path="/item" element={<ItemDetailContainer />}></Route>
+      //TODO:filtra los productos por categoria 
       <Route path="/category/:idCategory" element={<ItemListContainer />}></Route>
     </Routes>
     <ItemCount stock="5" initial="1"/>

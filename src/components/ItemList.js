@@ -1,5 +1,5 @@
 import Item from "./Item";
-
+//TODO:mapeo de los productos
 const ItemList = ({items}) =>{
 return(
     <>
@@ -9,7 +9,6 @@ return(
     key={item.id}
     title={item.title}
     pictureUrl={item.pictureUrl}
-    description={item.description}
     price={item.price}
     stock={item.stock}
     /> 

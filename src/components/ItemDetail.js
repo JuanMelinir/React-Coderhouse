@@ -1,6 +1,7 @@
 import Item from "./Item";
 
 const ItemDetail=({item})=>{
+    //TODO: Muestro los detalles de un producto
     return(
         <>
         {
