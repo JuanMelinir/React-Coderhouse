@@ -14,16 +14,16 @@ const Navbar=()=>{
   <div className="collapse navbar-collapse" id="navbarNav">
     <ul className="navbar-nav">
       <li className="nav-item active">
-        <Link to="/category/1">Anime</Link>
+        <Link to='/category/1'>Anime</Link>
       </li>
       <li className="nav-item">
-        <Link to="/category/2">Bandas</Link>
+        <Link to='/category/2' >Bandas</Link>
       </li>
       <li className="nav-item">
-        <Link to="/category/3">Peliculas</Link>
+        <Link to='/category/3' >Peliculas</Link>
       </li>
       <li className="nav-item">
-        <Link to="/category/otros">Otros</Link>
+        <Link to='/category/otros' >Otros</Link>
       </li>
       <li className="nav-item">
         <a className="nav-link" href="#" id="color-item"><ShoppingCart/></a>

@@ -1,5 +1,5 @@
 import Item from "./Item";
-
+import ItemCount from "./ItemCount";
 const ItemDetail=({item})=>{
     //TODO: Muestro los detalles de un producto
     return(
@@ -9,6 +9,7 @@ const ItemDetail=({item})=>{
         <div className="contenedorItem">
         <h5 className="textPrecio">{item.title}</h5>
         <img src={item.pictureUrl} alt={item.title}/>
+        <ItemCount stock="5" initial="1" />
         </div>
         <div className="contenedorItemDetalles">
         <h6 className="textDescripcion">{item.description}</h6>

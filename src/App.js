@@ -2,25 +2,23 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import ItemListContainer from './components/ItemListContainer';
-import ItemCount from './components/ItemCount';
 import ItemDetailContainer from './components/ItemDetailContainer';
-import {BrowserRouter,Route,Routes,Link} from 'react-router-dom'
+import {BrowserRouter,Route,Routes} from 'react-router-dom'
 
 const App=() =>{
   return (
     <BrowserRouter>
-    <div>
+    
     <Navbar/>
     <Routes>
       //TODO: Lista de todos los productos de nuestro ecommerce
-      <Route path="/" element={<ItemListContainer />}></Route>
+      <Route path="/" element={<ItemListContainer />}/>
       //TODO: Muestra el detalle de un item
-      <Route path="/item" element={<ItemDetailContainer />}></Route>
+      <Route path="/item/:id" element={<ItemDetailContainer />}/>
       //TODO:filtra los productos por categoria 
-      <Route path="/category/:idCategory" element={<ItemListContainer />}></Route>
+      <Route path="/category/:idCategory" element={<ItemListContainer />}/>
     </Routes>
-    <ItemCount stock="5" initial="1"/>
-    </div>
+  
     </BrowserRouter>
     
     

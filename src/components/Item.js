@@ -1,3 +1,5 @@
+
+
 //TODO:Un producto, detalles del mismo
 const Item=(props)=>{
 return(
@@ -8,7 +10,9 @@ return(
     <h5>{props.description}</h5>
     <img src={props.pictureUrl} alt={props.title}/>
     <h3>{props.price}</h3>
+    <button type="button" className="btn btn-danger" id="boton_detalles" Link to="/item">Detalles</button>
     <h6>Stock disponible {props.stock}</h6>
+    
 </div>
 );
 }

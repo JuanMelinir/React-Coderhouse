@@ -54,7 +54,7 @@ margin-right: 40px;
   color: #ffffff;
 }
 .form{
-  width: 10%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -123,4 +123,9 @@ margin-right: 40px;
   font-weight: bolder;
   color:crimson;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#boton_detalles{
+  margin-left:10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
