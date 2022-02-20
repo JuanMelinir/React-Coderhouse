@@ -23,7 +23,7 @@ const ItemCount=({stock,initial})=>{
     
     return(
 <div className="form">
-<h6>Producto1</h6>
+{/*<h6>Producto1</h6>*/}
   <div className="input-group-prepend contador">
     <button className="btn btn-outline-primary" type="button" onClick={decrement}>-</button>
     <input type="text" className="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1" value={contador}></input>

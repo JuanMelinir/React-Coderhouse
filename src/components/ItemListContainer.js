@@ -15,7 +15,6 @@ const ItemListContainer =()=>{
         );
  }
     
-    
     useEffect(()=>{
         if(idCategory===undefined){
             customFetch(elements,2000)
@@ -26,9 +25,7 @@ const ItemListContainer =()=>{
             .then(result=>setItems(result))
             .catch(error=>console.log(error))
         }
-            
-  
-    },[]);
+    },[idCategory]);
 
 
     return(

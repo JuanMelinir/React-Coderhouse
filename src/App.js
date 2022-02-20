@@ -14,7 +14,7 @@ const App=() =>{
       //TODO: Lista de todos los productos de nuestro ecommerce
       <Route path="/" element={<ItemListContainer />}/>
       //TODO: Muestra el detalle de un item
-      <Route path="/item/:id" element={<ItemDetailContainer />}/>
+      <Route path="/item/:idItem" element={<ItemDetailContainer />}/>
       //TODO:filtra los productos por categoria 
       <Route path="/category/:idCategory" element={<ItemListContainer />}/>
     </Routes>

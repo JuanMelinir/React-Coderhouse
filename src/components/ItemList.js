@@ -7,6 +7,7 @@ return(
     items.map(item=>
     <Item 
     key={item.id}
+    id={item.id}
     title={item.title}
     pictureUrl={item.pictureUrl}
     price={item.price}

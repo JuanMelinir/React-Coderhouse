@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom';
 const Navbar=()=>{
     return (
       <>
-<nav className="navbar navbar-expand-lg navbar-light  bg-danger">
+<nav className="navbar navbar-expand-lg navbar-light " >
   <Link to='/' style={{textDecoration:'none'}}><img src={logoMarca} width="150" height="40"></img></Link>
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon"></span>
@@ -14,23 +14,25 @@ const Navbar=()=>{
   <div className="collapse navbar-collapse" id="navbarNav">
     <ul className="navbar-nav">
       <li className="nav-item active">
-        <Link to='/category/1'>Anime</Link>
+        <Link to='/category/1'><h6 className='text'>Anime</h6></Link>
       </li>
       <li className="nav-item">
-        <Link to='/category/2' >Bandas</Link>
+        <Link to='/category/2' ><h6 className='text'>Bandas</h6></Link>
       </li>
       <li className="nav-item">
-        <Link to='/category/3' >Peliculas</Link>
+        <Link to='/category/3' ><h6 className='text'>Películas</h6></Link>
       </li>
       <li className="nav-item">
-        <Link to='/category/otros' >Otros</Link>
+        <Link to='/category/4' ><h6 className='text'>Clásicos</h6></Link>
       </li>
       <li className="nav-item">
         <a className="nav-link" href="#" id="color-item"><ShoppingCart/></a>
       </li>
     </ul>
   </div>
+  
 </nav>
+<div className="linea"></div>
 </>
     )
 }

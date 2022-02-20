@@ -9,6 +9,7 @@ const ItemDetail=({item})=>{
         <div className="contenedorItem">
         <h5 className="textPrecio">{item.title}</h5>
         <img src={item.pictureUrl} alt={item.title}/>
+        <h5 className="textPrecio">Código artículo: {item.id}</h5>
         <ItemCount stock="5" initial="1" />
         </div>
         <div className="contenedorItemDetalles">
