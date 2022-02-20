@@ -14,7 +14,7 @@ const ItemDetail=({item})=>{
         </div>
         <div className="contenedorItemDetalles">
         <h6 className="textDescripcion">{item.description}</h6>
-        <h3 className="textPrecio">{item.price}</h3>
+        <h3 className="textPrecio">$ {item.price}</h3>
         </div>
         
         

@@ -11,7 +11,7 @@ return(
     <h5>{props.description}</h5>
     <img src={props.pictureUrl} alt={props.title}/>
    <div className="precio"><h3 className='textPrecio'>{props.price}</h3></div> 
-    <Link to={`/item/${props.id}`}><h6 className="text">Detalles</h6></Link>
+    <Link to={`/item/${props.id}`} id="textLink"><h6 className="text">Detalles</h6></Link>
     <h6>Stock disponible {props.stock}</h6>
 </div>
 );

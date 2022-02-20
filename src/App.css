@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shizuru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shizuru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 .App {
   text-align: center;
 }
@@ -42,7 +47,10 @@ padding-left: 50px;
 #navbarNav{
 display:flex;
 flex-direction: row;
-justify-content: right;
+justify-content: center;
+align-items: center;
+align-content: center;
+
 }
 .linea {
   border-top: 1px solid crimson;
@@ -50,14 +58,28 @@ justify-content: right;
   padding: 0;
   margin: 20px auto 0 auto;
 }
+#textLink{
+  text-decoration: none;
+}
+
 .navbar-nav{
   margin-right: 50px;
+  align-items: center;
+  align-content: center;
+  margin-top: 20px;
 }
 .nav-item{
 margin-right: 40px;
 }
 #color-item{
   color: #ffffff;
+}
+.imagenLogo{
+margin-left: 50px; 
+}
+.contenedorCarrito{
+  float: right;
+  margin-right: 5px;
 }
 .contenedorTitulo{
   width: 100%;
@@ -82,6 +104,7 @@ justify-content: center;
   display: flex;
   flex-direction: column;
   align-content: center;
+  align-items:center;
   text-align: center;
 }
 .contador{
@@ -120,9 +143,10 @@ margin-bottom: 15px;
 .contenedorItems{
   width: 100%;
   justify-content: center;
+  align-items: center;
+  align-content: center;
   margin-left: 25px;
   margin-right: 25px;
-  background-color:red;
 }
 .contenedorItemDescripcion{
   width:100%;
@@ -157,7 +181,9 @@ margin-top: 1px;
 }
 .text{
   color:black;
+  font-size: larger;
   text-decoration: none;
+  font-family: 'Staatliches', cursive;
 }
 #boton_detalles{
   margin-left:10px;
