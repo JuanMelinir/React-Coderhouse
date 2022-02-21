@@ -20,10 +20,10 @@ const Navbar=()=>{
         <Link to='/category/2' id="textLink"><h6 className='text'>Bandas</h6></Link>
       </li>
       <li className="nav-item">
-        <Link to='/category/3' id="textLink"><h6 className='text'>Películas</h6></Link>
+        <Link to='/category/3' id="textLink"><h6 className='text'>Peliculas</h6></Link>
       </li>
       <li className="nav-item">
-        <Link to='/category/4' id="textLink"><h6 className='text'>Clásicos</h6></Link>
+        <Link to='/category/4' id="textLink"><h6 className='text'>Clasicos</h6></Link>
       </li>
       
     </ul>

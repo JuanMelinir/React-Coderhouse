@@ -135,6 +135,151 @@
         price:"2700",
         stock:"5"
     }
+    ,
+    {
+        id:16 ,
+        title:"AC DC" ,
+        idCategory:4,
+        pictureUrl:"https://i.postimg.cc/bZS3GSQn/acdc1.png" ,
+        description:"Son dos personajes animados, un gato (Tom) y un ratón (Jerry), que protagonizaron un gran número de cortometrajes creados, escritos y dirigidos por William Hanna y Joseph Barbera (anterior a la fama de su empresa Hanna-Barbera).",
+        price:"2700",
+        stock:"5"
+    },
+    {
+        id:17,
+        title:"Anthrax" ,
+        idCategory:4,
+        pictureUrl:"https://i.postimg.cc/1VRv4WHR/anthrax1.png" ,
+        description:"Son dos personajes animados, un gato (Tom) y un ratón (Jerry), que protagonizaron un gran número de cortometrajes creados, escritos y dirigidos por William Hanna y Joseph Barbera (anterior a la fama de su empresa Hanna-Barbera).",
+        price:"2700",
+        stock:"5"
+    },
+    {
+        id:18,
+        title:"Arnold" ,
+        idCategory:4,
+        pictureUrl:"https://i.postimg.cc/yWnf2H1D/arnold1.png" ,
+        description:"Son dos personajes animados, un gato (Tom) y un ratón (Jerry), que protagonizaron un gran número de cortometrajes creados, escritos y dirigidos por William Hanna y Joseph Barbera (anterior a la fama de su empresa Hanna-Barbera).",
+        price:"2700",
+        stock:"5"
+    },
+    {
+        id:19,
+        title:"Beatles" ,
+        idCategory:4,
+        pictureUrl:"https://i.postimg.cc/fJr8Tf0Z/beatles1.png" ,
+        description:"Son dos personajes animados, un gato (Tom) y un ratón (Jerry), que protagonizaron un gran número de cortometrajes creados, escritos y dirigidos por William Hanna y Joseph Barbera (anterior a la fama de su empresa Hanna-Barbera).",
+        price:"2700",
+        stock:"5"
+    },
+    {
+        id:20,
+        title:"Bloodsport" ,
+        idCategory:4,
+        pictureUrl:"https://i.postimg.cc/2VVxJL9t/bloodsport1.png" ,
+        description:"Son dos personajes animados, un gato (Tom) y un ratón (Jerry), que protagonizaron un gran número de cortometrajes creados, escritos y dirigidos por William Hanna y Joseph Barbera (anterior a la fama de su empresa Hanna-Barbera).",
+        price:"2700",
+        stock:"5"
+    },
+    {
+        id:21,
+        title:"Bod Marley" ,
+        idCategory:4,
+        pictureUrl:"https://i.postimg.cc/svDL226P/bobm1.png" ,
+        description:"Son dos personajes animados, un gato (Tom) y un ratón (Jerry), que protagonizaron un gran número de cortometrajes creados, escritos y dirigidos por William Hanna y Joseph Barbera (anterior a la fama de su empresa Hanna-Barbera).",
+        price:"2700",
+        stock:"5"
+    },
+    {
+        id:22,
+        title:"Bod Marley" ,
+        idCategory:4,
+        pictureUrl:"https://i.postimg.cc/vgbzSPC7/bobmarley1.png" ,
+        description:"Son dos personajes animados, un gato (Tom) y un ratón (Jerry), que protagonizaron un gran número de cortometrajes creados, escritos y dirigidos por William Hanna y Joseph Barbera (anterior a la fama de su empresa Hanna-Barbera).",
+        price:"2700",
+        stock:"5"
+    },
+    {
+        id:23,
+        title:"Black Sabbath" ,
+        idCategory:4,
+        pictureUrl:"https://i.postimg.cc/WtsW93vR/bs1.png" ,
+        description:"Son dos personajes animados, un gato (Tom) y un ratón (Jerry), que protagonizaron un gran número de cortometrajes creados, escritos y dirigidos por William Hanna y Joseph Barbera (anterior a la fama de su empresa Hanna-Barbera).",
+        price:"2700",
+        stock:"5"
+    },
+    {
+        id:24,
+        title:"Dragon ball" ,
+        idCategory:4,
+        pictureUrl:"https://i.postimg.cc/v4vDt3Lw/dbz2.png" ,
+        description:"Son dos personajes animados, un gato (Tom) y un ratón (Jerry), que protagonizaron un gran número de cortometrajes creados, escritos y dirigidos por William Hanna y Joseph Barbera (anterior a la fama de su empresa Hanna-Barbera).",
+        price:"2700",
+        stock:"5"
+    },
+    {
+        id:25,
+        title:"Eric Clapton" ,
+        idCategory:4,
+        pictureUrl:"https://i.postimg.cc/QKqvy96C/ericclapton1.png" ,
+        description:"Son dos personajes animados, un gato (Tom) y un ratón (Jerry), que protagonizaron un gran número de cortometrajes creados, escritos y dirigidos por William Hanna y Joseph Barbera (anterior a la fama de su empresa Hanna-Barbera).",
+        price:"2700",
+        stock:"5"
+    },
+    {
+        id:26,
+        title:"Nirvana" ,
+        idCategory:4,
+        pictureUrl:"https://i.postimg.cc/dZDS4HTH/gunsoroses1.png" ,
+        description:"Son dos personajes animados, un gato (Tom) y un ratón (Jerry), que protagonizaron un gran número de cortometrajes creados, escritos y dirigidos por William Hanna y Joseph Barbera (anterior a la fama de su empresa Hanna-Barbera).",
+        price:"2700",
+        stock:"5"
+    },
+    {
+        id:27,
+        title:"Guns Roses" ,
+        idCategory:4,
+        pictureUrl:"https://i.postimg.cc/gwq5J6WD/gunsroses2.png" ,
+        description:"Son dos personajes animados, un gato (Tom) y un ratón (Jerry), que protagonizaron un gran número de cortometrajes creados, escritos y dirigidos por William Hanna y Joseph Barbera (anterior a la fama de su empresa Hanna-Barbera).",
+        price:"2700",
+        stock:"5"
+    },
+    {
+        id:28,
+        title:"One Piece" ,
+        idCategory:4,
+        pictureUrl:"https://i.postimg.cc/tsLyP68G/onepiece1.png" ,
+        description:"Son dos personajes animados, un gato (Tom) y un ratón (Jerry), que protagonizaron un gran número de cortometrajes creados, escritos y dirigidos por William Hanna y Joseph Barbera (anterior a la fama de su empresa Hanna-Barbera).",
+        price:"2700",
+        stock:"5"
+    },
+    {
+        id:29,
+        title:"One Piece" ,
+        idCategory:4,
+        pictureUrl:"https://i.postimg.cc/t1Cd316D/rm2.png" ,
+        description:"Son dos personajes animados, un gato (Tom) y un ratón (Jerry), que protagonizaron un gran número de cortometrajes creados, escritos y dirigidos por William Hanna y Joseph Barbera (anterior a la fama de su empresa Hanna-Barbera).",
+        price:"2700",
+        stock:"5"
+    },
+    {
+        id:30,
+        title:"Tortugas ninjas" ,
+        idCategory:4,
+        pictureUrl:"https://i.postimg.cc/Hr3XkpNM/turtles1.png" ,
+        description:"Son dos personajes animados, un gato (Tom) y un ratón (Jerry), que protagonizaron un gran número de cortometrajes creados, escritos y dirigidos por William Hanna y Joseph Barbera (anterior a la fama de su empresa Hanna-Barbera).",
+        price:"2700",
+        stock:"5"
+    },
+    {
+        id:31,
+        title:"Whitesnake" ,
+        idCategory:4,
+        pictureUrl:"https://i.postimg.cc/RWTQJ1WN/ws2.png" ,
+        description:"Son dos personajes animados, un gato (Tom) y un ratón (Jerry), que protagonizaron un gran número de cortometrajes creados, escritos y dirigidos por William Hanna y Joseph Barbera (anterior a la fama de su empresa Hanna-Barbera).",
+        price:"2700",
+        stock:"5"
+    }
 ];
 module.exports={
     elements
