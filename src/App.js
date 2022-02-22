@@ -4,9 +4,12 @@ import Navbar from './components/Navbar';
 import ItemListContainer from './components/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer';
 import {BrowserRouter,Route,Routes} from 'react-router-dom'
+import Cart from './components/Cart';
+import {CartContext} from './components/CartContext';
 
 const App=() =>{
   return (
+    /*<CartContext.Provider value={[]}>*/
     <BrowserRouter>
     
     <Navbar/>
@@ -17,9 +20,11 @@ const App=() =>{
       <Route path="/item/:idItem" element={<ItemDetailContainer />}/>
       //TODO:filtra los productos por categoria 
       <Route path="/category/:idCategory" element={<ItemListContainer />}/>
+      <Route path="/cart" element={<Cart/>}/>
     </Routes>
   
     </BrowserRouter>
+    /*</CartContext.Provider>*/
     
     
     /*<div className="App">

@@ -100,15 +100,15 @@ flex-direction: row;
 justify-content: center;
 }
 .form{
-  width: 60%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-content: center;
   align-items:center;
   text-align: center;
-  background-color:crimson;
 }
 .contador{
+  width:60%;
   display: flex;
   flex-direction: row;
   margin-top: 5px;
