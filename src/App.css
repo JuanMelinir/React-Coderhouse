@@ -146,6 +146,28 @@ margin-bottom: 15px;
   margin-right: 15px;
   box-shadow: 0px 5px 5px 0px rgb(104, 104, 104);
 }
+.contenedorItemCarrito{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  width: 30%;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  }
+.contenedorItemDetallesCarrito{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  width: 60%;
+}
+
 .contenedorItemDescripcion{
   width:100%;
   display: flex;
@@ -191,4 +213,9 @@ margin-top: 1px;
 #btnDetalles{
   height:8%;
   margin-bottom:15px;
+}
+#btnVaciar{
+  position:absolute;
+  right:40px;
+  width: 120px;
 }

@@ -27,7 +27,7 @@ const Navbar=()=>{
       </li>
       
     </ul>
-    <div className='contenedorCarrito'><a className="nav-link" href="#" id="color-item"><ShoppingCart/></a></div>
+    <div className='contenedorCarrito'><Link to='/cart'><ShoppingCart/></Link></div>
   </div>
   
 </nav>
