@@ -10,10 +10,14 @@ const Cart = () => {
     return (
         <div className="contenedorItems">
        <h3>Carrito</h3>
-       <button className="btn btn-dark" type="button" id="btnVaciar" onClick={carrito.clear}>Vaciar</button>
-        
-            {
-                carrito.cartList.map(item=>(
+       {
+        carrito.cartList.length > 0
+       ?<button className="btn btn-dark" type="button" id="btnVaciar" onClick={
+           carrito.clear}>Vaciar</button>
+       :<h5>Su carro está vacio</h5>  }
+            
+                
+                {carrito.cartList.length>0 && carrito.cartList.map(item=>(
                 <div className="contenedorItemDescripcion">
                 
                 <div className="contenedorItemDetallesCarrito">
@@ -24,7 +28,7 @@ const Cart = () => {
                 </div>
                 </div>
                 <div className="contenedorItem">
-                <h6 className="textDescripcion">{item.cantidad} items</h6>
+                <h6 className="textDescripcion">{item.cantidadItems} items</h6>
                 <h6 className="textPrecio">precio $ {item.price}</h6>
                 </div>
                 </div>    

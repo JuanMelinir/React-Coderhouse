@@ -6,35 +6,36 @@ const CartContextProvider=({children})=>{
     const [cartList,setCartList]=useState([]);
     
     const addToCart=(item,cantidad)=>{
-        /*const isInCart=cartList.find((cartItem)=>cartItem.id===parseInt(item.id));*/
-
-        if(isInCart(item.id)){
-        setCartList(cartList.map((cartItem)=>{
-        return {...cartItem,cantidad:cartItem.cantidad+cantidad}
-        })
-        );
-        }else{
+        let encontrado=cartList.find((cartItem)=>cartItem.id===item.id)
+        if(encontrado===undefined){
             setCartList([
                 ...cartList,{
                 id:item.id,
                 title:item.title,
                 pictureUrl:item.pictureUrl,
                 price:item.price,
-                cantidad:cantidad
+                cantidadItems:cantidad
             }]);
+        }else{
+            encontrado.cantidadItems+=cantidad;
+            console.log(encontrado.cantidadItems)
         }
     };
     const removeItem=(id)=>{
-    setCartList(cartList.filter((item)=>item.id!==id));
+    setCartList(cartList.filter((cartItem)=>cartItem.id!==id));
     };
     const isInCart=(id)=>{
-    return cartList.find((cartItem)=>cartItem.id===parseInt(id))
+    return cartList.find((cartItem)=>cartItem.id===id)
     };
     const clear=()=>{
     setCartList([]);
     };
+    const calcularCantidadItems=()=>{
+    let cantidades=cartList.map((cartItem)=>cartItem.cantidadItems); 
+    return cantidades.reduce(((acumulador,valorActual)=>acumulador+valorActual),0);
+    }
     return (
-<CartContext.Provider value={{cartList,addToCart,removeItem,isInCart,clear}}>
+<CartContext.Provider value={{cartList,addToCart,removeItem,isInCart,clear,calcularCantidadItems}}>
 {children}
 </CartContext.Provider>
     );

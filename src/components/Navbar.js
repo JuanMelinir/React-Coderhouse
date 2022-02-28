@@ -25,7 +25,9 @@ const Navbar=()=>{
       <li className="nav-item">
         <Link to='/category/4' id="textLink"><h6 className='text'>Clasicos</h6></Link>
       </li>
-      
+      <li className="nav-item">
+        <Link to='/category/5' id="textLink"><h6 className='text'>Otros</h6></Link>
+      </li>
     </ul>
     <div className='contenedorCarrito'><Link to='/cart'><ShoppingCart/></Link></div>
   </div>
