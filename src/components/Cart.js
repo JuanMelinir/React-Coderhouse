@@ -4,7 +4,7 @@ import { CartContext } from './CartContext';
 import CartContextProvider from './CartContext';
 
 const Cart = () => {
-    const {removeItem}=useContext(CartContext);
+    const {removeItem,totalCost}=useContext(CartContext);
     const carrito = useContext(CartContext);
  console.log(carrito.cartList);
     return (
@@ -29,14 +29,19 @@ const Cart = () => {
                 </div>
                 <div className="contenedorItem">
                 <h6 className="textDescripcion">{item.cantidadItems} items</h6>
-                <h6 className="textPrecio">precio $ {item.price}</h6>
+                <h6 className="textPrecio">precio por unidad: $ {item.price}</h6>
+                <h6 className="textPrecio">precio total: $ {item.price*item.cantidadItems}</h6>
                 </div>
                 </div>    
                 
             
             )
             )
+            
             }   
+            <div> 
+                <h6>Total: {totalCost.reduce((a,b)=>a+b,0)}</h6>
+                </div>
             </div>
     );
 }

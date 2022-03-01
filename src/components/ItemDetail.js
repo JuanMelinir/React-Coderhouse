@@ -14,6 +14,7 @@ const ItemDetail=({item})=>{
         alert("Se agregaron "+cantidad+" productos al carrito.");
         setItemCount(cantidad);
         carrito.addToCart(item,cantidad);
+        carrito.calcularCantidadItems(cantidad)
     } 
     return(
         <>
