@@ -30,7 +30,7 @@ const ItemListContainer =()=>{
             .catch(error=>console.log(error))
         }
     },[idCategory]);
-*/
+
     useEffect(()=>{
         const firestoreFech=async()=>{
             const querySnapshot = await getDocs(collection(db, "remeras"));
@@ -44,14 +44,13 @@ const ItemListContainer =()=>{
         .then(result=>setItems(result))
         .catch(error=>console.log(error))
     },[idCategory]);
-    /*
+    */
     useEffect(()=>{
-        firestoreFech(categoryId)
+        firestoreFech(idCategory)
         .then(result=>setItems(result))
         .catch(error=>console.log(error))
-       
-    },[]);
-*/
+    },[idCategory]);
+
     return(
         //TODO:Devuelvo los productos filtrados
         <>

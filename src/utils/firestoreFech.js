@@ -2,10 +2,11 @@ import {query,orderBy,where,collection,getDocs} from '@firebase/firestore';
 import {doc,getDoc} from "firebase/firestore";
 import db from './firebaseConfig';
 
-export const firestoreFech=async(categoryId)=>{
+export const firestoreFech=async(idCategory)=>{
     let q;
-    if(categoryId){
-    q=query(collection(db,"remeras"), where('idCategory', '==' ,categoryId));
+    if(idCategory){
+    q=query(collection(db,"remeras"), where('idCategory', '==' ,parseInt(idCategory)));
+    console.log(q);
     }else{
     q=query(collection(db,"remeras"), orderBy('title'));
     }

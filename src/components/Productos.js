@@ -68,7 +68,7 @@
         title:"Tom y Jerry" ,
         idCategory:4,
         pictureUrl:"https://i.postimg.cc/R62tJYdw/tyj2.png" ,
-       description:"Remeras 100% algodón. Trabajamos remeras unisex, mujer y niño. Talles adulto(unisex o mujer):2 al 3xl, niño:2 al 14. Achican aproximadamente 1 cm. ",
+        description:"Remeras 100% algodón. Trabajamos remeras unisex, mujer y niño. Talles adulto(unisex o mujer):2 al 3xl, niño:2 al 14. Achican aproximadamente 1 cm. ",
         price:"2700",
         stock:"5"
     },
@@ -196,6 +196,7 @@
         idCategory:4,
         pictureUrl:"https://i.postimg.cc/GHGFGbZt/simpson3.png" ,
         description:"Remeras 100% algodón. Trabajamos remeras unisex, mujer y niño. Talles adulto(unisex o mujer):2 al 3xl, niño:2 al 14. Achican aproximadamente 1 cm. ",
+        price:"2700",
         stock:"5"
     },
     {
@@ -249,6 +250,7 @@
         idCategory:2,
         pictureUrl:"https://i.postimg.cc/N5SnfGR0/motleycrue1.png" ,
         description:"Remeras 100% algodón. Trabajamos remeras unisex, mujer y niño. Talles adulto(unisex o mujer):2 al 3xl, niño:2 al 14. Achican aproximadamente 1 cm. ",
+        price:"2700",
         stock:"5"
     },
     {
