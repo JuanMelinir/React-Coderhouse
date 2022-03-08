@@ -138,13 +138,17 @@ margin-bottom: 15px;
   justify-content: center;
   align-content: center;
   text-align: center;
-  width: 70%;
+  width: 60%;
   background-color: rgb(255, 255, 255);
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-left: 10px;
-  margin-right: 15px;
-  box-shadow: 0px 5px 5px 0px rgb(104, 104, 104);
+
+}
+.contenedorItemsCarrito{
+  max-width: 100%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content:center;
 }
 .contenedorItemCarrito{
   display: flex;
@@ -165,13 +169,30 @@ margin-bottom: 15px;
   align-content: center;
   align-items: center;
   text-align: center;
-  width: 60%;
+  width: 70%;
+  margin-bottom: 20px;
 }
-
+.contenedorTituloItemCarrito{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  height: 100%;
+  width: 200px;
+  }
 .contenedorItemDescripcion{
   width:100%;
   display: flex;
   flex-direction: row;
+}
+.contenedorImagen{
+  max-width: 100%;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  margin-left: 20px;
+  margin-right: 50px;
 }
 .textDescripcion{
   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -216,6 +237,24 @@ margin-top: 1px;
 }
 #btnVaciar{
   position:absolute;
+  top:100px;
   right:40px;
   width: 120px;
+}
+.contenedorTabla{
+  width: 300px;
+  margin-top: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.detalles{
+  background-color: chartreuse;
+  display: flex;
+  flex-direction: row;
+  margin-left: 0px;
+  margin-right: 0px;
 }
