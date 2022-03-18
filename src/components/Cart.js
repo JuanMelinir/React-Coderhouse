@@ -36,9 +36,6 @@ const Cart = () => {
             })
             .catch(error => console.log(error));
     }
-
-
-
     return (
         <div className="contenedorItemsCarrito">
             <h3>Carrito</h3>
@@ -68,19 +65,14 @@ const Cart = () => {
                             <h6 >precio total: $ {item.price * item.cantidadItems}</h6>
                         </div>
                     </div>
-
-
-
                 </div>
 
-
             )
             )
-
             }</div>
-                   <div class="col-4"><div className="contenedorTabla">
+                   <div className="col-4"><div className="contenedorTabla">
                     
-                    <table class="table">
+                    <table className="table">
 
                         <thead>
                         <h6>Pedido N° xxxxxxx</h6>

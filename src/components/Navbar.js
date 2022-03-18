@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import logoMarca from '../image/logoinsiders.png'
+import logoMarca from '../assets/logoinsiders.png'
 import ShoppingCart from './CartWidget';
 import {Link} from 'react-router-dom';
 

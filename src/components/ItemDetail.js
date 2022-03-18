@@ -29,7 +29,6 @@ const ItemDetail=({item})=>{
              ? <ItemCount stock={item.stock} initial={itemCount} onAdd={onAdd}/>
              : <Link to='/cart' style={{textDecoration:"none"}}><button className="btn btn-dark" type="button">Checkear compra</button></Link>
         }
-    
         </div>
         <div className="contenedorItemDetalles">
         <h6 className="textDescripcion">{item.description}</h6>

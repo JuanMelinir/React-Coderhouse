@@ -35,11 +35,7 @@ const CartContextProvider=({children})=>{
     setTotalI(0);
     };
     const calcularCantidadItems=(valor)=>{
-        setTotalI(totalI+valor);
-        /*
-    let cantidades=cartList.map(cartItem=>cartItem.cantidadItems); 
-    return cantidades.reduce((acumulador,valorActual)=>acumulador+valorActual,0);
-*/    
+        setTotalI(totalI+valor);  
 }
     const totalCost=cartList.map(elem => elem.price*elem.cantidadItems);  
 

@@ -4,7 +4,6 @@ import {Link} from 'react-router-dom';
 const Item=(props)=>{
 return(
 <div className="contenedorItem">
-    {/*<h6>{props.id}</h6>*/}
     <div className="textPrecioAnterior"> <h3 className='textPrecioTachado'>-10% </h3></div>
     <div className="contenedorTitulo"><h5 className='titulo'>{props.title}</h5></div>
     <h5>{props.idCategory}</h5>

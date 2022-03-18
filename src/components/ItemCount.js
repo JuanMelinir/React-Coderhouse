@@ -20,7 +20,6 @@ const ItemCount=({stock,initial,onAdd})=>{
     
     return(
 <div className="form">
-{/*<h6>Producto1</h6>*/}
   <div className="input-group-prepend contador">
     <button className="btn btn-outline-primary" type="button" onClick={decrement}>-</button>
     <input type="text" className="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1" value={contador}></input>
@@ -29,7 +28,7 @@ const ItemCount=({stock,initial,onAdd})=>{
   {
       stock && contador
       ? <button className="btn btn-danger" type="button" onClick={()=>onAdd(contador)}>ADD TO CART</button>
-      : <button className="btn btn-danger" type="button" disabled>ADD TO CART</button>
+      : <button className="btn btn-dangercd" type="button" disabled>ADD TO CART</button>
   }
   
 </div>
