@@ -33,7 +33,7 @@ const Navbar=()=>{
   </div>
   
 </nav>
-<div className="linea"></div>
+<div className="line"></div>
 </>
     )
 }

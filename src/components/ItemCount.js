@@ -3,32 +3,32 @@ import { useEffect, useState } from 'react';
 
 const ItemCount=({stock,initial,onAdd})=>{
 
-    const [contador,setContador]=useState(0);
+    const [counter,setCounter]=useState(0);
     const increment=()=>{
-        if(contador<stock){
-            setContador(contador+1);
+        if(counter<stock){
+            setCounter(counter+1);
         }
     }    
     const decrement=()=>{
-        if(contador>initial){
-            setContador(contador-1);
+        if(counter>initial){
+            setCounter(counter-1);
         }
     } 
     useEffect(()=>{
     console.log();
-    },[contador]);
+    },[counter]);
     
     return(
 <div className="form">
   <div className="input-group-prepend contador">
     <button className="btn btn-outline-primary" type="button" onClick={decrement}>-</button>
-    <input type="text" className="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1" value={contador}></input>
+    <input type="text" className="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1" value={counter}></input>
     <button className="btn btn-outline-primary" type="button" onClick={increment}>+</button>
   </div>
   {
-      stock && contador
-      ? <button className="btn btn-danger" type="button" onClick={()=>onAdd(contador)}>ADD TO CART</button>
-      : <button className="btn btn-dangercd" type="button" disabled>ADD TO CART</button>
+      stock && counter
+      ? <button className="btn btn-danger" type="button" onClick={()=>onAdd(counter)}>ADD TO CART</button>
+      : <button className="btn btn-danger" type="button" disabled>ADD TO CART</button>
   }
   
 </div>

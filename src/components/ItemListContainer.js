@@ -18,7 +18,7 @@ const ItemListContainer =()=>{
     return(
         //TODO:Devuelvo los productos filtrados
         <>
-        <div className="contenedorItems">
+        <div className="itemsContainer">
         <ItemList items={items}/>
         </div>
         </>

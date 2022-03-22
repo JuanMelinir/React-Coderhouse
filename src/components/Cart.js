@@ -7,72 +7,69 @@ import db from '../utils/firebaseConfig';
 
 const Cart = () => {
     const { removeItem, totalCost } = useContext(CartContext);
-    const carrito = useContext(CartContext);
-    const crearOrden = () => {
-        let orden = {
+    const cart = useContext(CartContext);
+    const createOrder = () => {
+        let order = {
             buyer: {
                 email: "leo_messi@gmail.com",
                 name: "Leo Messi",
                 phone: "123456"
             },
             date: serverTimestamp(),
-            items: carrito.cartList.map((item) => {
-                return { id: item.id, price: item.price, title: item.title, cantidad: item.cantidadItems }
+            items: cart.cartList.map((item) => {
+                return { id: item.id, price: item.price, title: item.title, quantity: item.quantityItems }
             }),
-            total: carrito.totalCost
+            total: cart.totalCost
         }
         const crearOrdenEnFirestore = async () => {
             const newOrderRef = doc(collection(db, "orders"))
-            await setDoc(newOrderRef, orden)
+            await setDoc(newOrderRef, order)
             return newOrderRef;
         }
         crearOrdenEnFirestore()
             .then(result => {
-                alert("tu orden ha sido creada: " + result.id); carrito.clear();
-                carrito.cartList.map(async (item) => {
+                alert("tu orden ha sido creada: " + result.id); cart.clear();
+                cart.cartList.map(async (item) => {
                     const itemRef = doc(db, "remeras", item.id);
-                    await updateDoc(itemRef, { stock: increment(-item.cantidadItems) })
+                    await updateDoc(itemRef, { stock: increment(-item.quantityItems) })
                 })
             })
             .catch(error => console.log(error));
     }
     return (
-        <div className="contenedorItemsCarrito">
-            <h3>Carrito</h3>
-            {
-                carrito.cartList.length > 0
-                    ? <button className="btn btn-dark" type="button" id="btnVaciar" onClick={
-                        carrito.clear}>Vaciar</button>
-                    :<div className="contenedorItemDescripcion"><h5>Su carro está vacio</h5></div>}
+        <div className="detailsContainer">
+            <div className="titleDetailsContainer"><h3>Carrito</h3>
+            
+            {cart.cartList.length > 0
+                    ? <button className="btn btn-dark" type="button" id="btnEmpty" onClick={cart.clear}>Vaciar</button>
+                    :<div className="itemDescriptionContainer"><h5>Su carro está vacio</h5></div>}
+                    </div>
+                <div className="itemDetailContainerCart">
+                {cart.cartList.length > 0 && cart.cartList.map(item => (
 
-                    <div class="row">
-                   <div class="col-8">{carrito.cartList.length > 0 && carrito.cartList.map(item => (
-                
-                <div className="contenedorItemDescripcion">
-
-                    <div className="contenedorItemDetallesCarrito">
-                        <div className="contenedorImagen">
+                    <div className="containerDetailsForItemCart">
+                        <div className="imageContainer">
                             <img src={item.pictureUrl}></img>
                         </div>
 
-                        <div className="contenedorTituloItemCarrito">
+                        <div className="cartItemTitleContainer">
                             <h5>{item.title}</h5>
-                            <button className="btn btn-dark " type="button" id="btnELiminar" onClick={() => removeItem(item.id)}>Eliminar</button>
+                            <button className="btn btn-dark " type="button" id="btnRemove" onClick={() => removeItem(item.id)}>Eliminar</button>
                         </div>
-                        <div className="contenedorItem">
-                            <h6 > cantidad: {item.cantidadItems} items</h6>
+                        <div className="containerQuantityItem">
+                            <h6 > cantidad: {item.quantityItems} items</h6>
                             <h6 >precio por unidad: $ {item.price}</h6>
-                            <h6 >precio total: $ {item.price * item.cantidadItems}</h6>
+                            <h6 >precio total: $ {item.price * item.quantityItems}</h6>
                         </div>
                     </div>
-                </div>
-
             )
-            )
-            }</div>
-                   <div className="col-4"><div className="contenedorTabla">
+            )}</div>
+            {
+            cart.cartList.length > 0
+            ? <div className="tableDetailsContainer">
+                <div className="tableContainer">
                     
-                    <table className="table">
+                    <table class="table">
 
                         <thead>
                         <h6>Pedido N° xxxxxxx</h6>
@@ -92,9 +89,11 @@ const Cart = () => {
                             </tr>
                         </tbody>
                     </table>
-                    <button className="btn btn-dark " type="button" id="btnELiminar" onClick={crearOrden}>Confirmar pedido</button>
-                </div></div>
-                   </div>
+                    <button className="btn btn-dark " type="button" id="btnRemove" onClick={createOrder}>Confirmar pedido</button>
+                </div>
+                </div>
+               :<div className="tableContainer"></div>
+            }
             
         </div>
     );
