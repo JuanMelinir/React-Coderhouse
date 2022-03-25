@@ -14,7 +14,8 @@ Construido con 🛠️
 React 8.3.1
 react-router-dom
 bootstrap 5
-material icon UI
+@material-ui/core
+@material-ui/icons
 
 
 Autor ✒️
