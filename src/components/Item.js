@@ -9,7 +9,7 @@ return(
     <h5>{props.idCategory}</h5>
     <h5>{props.description}</h5>
     <img src={props.pictureUrl} alt={props.title}/>
-   <div className="priceContainer"><h3 className='textPrice'>{props.price}</h3></div> 
+   <div className="priceContainer"><h3 className="textPriceBefore">{props.price}|</h3><h3 className='textPrice'>{props.price-0.1*props.price}</h3></div> 
     <button type="button" className="btn btn-outline-secondary" id="btnDetails"><Link to={`/item/${props.id}`} id="textLink"><h6 className="text">Detalles</h6></Link></button>
     <h6>Stock disponible {props.stock}</h6>
 </div>

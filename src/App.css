@@ -264,6 +264,20 @@ margin-bottom: 15px;
   color:crimson;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
+.textPriceDiscount{
+  margin-top: 10px;
+  font-size:small; 
+  font-weight: bolder;
+  color:crimson;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.textPriceBefore{
+  margin-top: 10px;
+  font-size:larger; 
+  font-weight: bolder;
+  color:rgb(0, 0, 0);
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
 .textPercentage{
   margin-top: 15px;
   font-size:small; 

@@ -4,12 +4,12 @@ import { useParams } from "react-router-dom";
 import {firestoreFechOne} from "../utils/firestoreFech";
 const {elements} = require("../utils/Productos");
 
-
+ //TODO: Según el item seleccionado a partir de mi idItem por parámetro lo busco en firebase
 const ItemDetailContainer =()=>{
 const [item,setItem]=useState({});
 const {idItem}=useParams();
 console.log(idItem);
-
+ //TODO: busco mi item en firebase
 useEffect(()=>{
     firestoreFechOne(idItem)
     .then(result=>setItem(result))

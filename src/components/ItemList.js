@@ -1,5 +1,5 @@
 import Item from "./Item";
-//TODO:mapeo de los productos
+//TODO:mapeo de los productos si la cantidad de items  es >0 sino muestro un spinner de espera
 const ItemList = ({items}) =>{
 return(
     <>
