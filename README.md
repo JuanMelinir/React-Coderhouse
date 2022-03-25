@@ -15,10 +15,11 @@ o bien clonando el repositorio en una carpeta creada, como? posicionandote en la
 Construido con 🛠️
 
 React 8.3.1
-react-router-dom
+react-dom 17.0.2
+react-router-dom 6.2.1
 bootstrap 5
-@material-ui/core
-@material-ui/icons
+@material-ui/core 4.12.3
+@material-ui/icons 4.11.2
 
 
 Autor ✒️
