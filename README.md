@@ -1,70 +1,43 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ecommerce de remeras
 
-## Available Scripts
+Este proyecto tiene una página principal en la que en el navbar se encuentra el logo de la marca que vende sus remeras y las distintas categorías junto con el carrito de compras. Al iniciar la misma se pueden apreciar todas las disponibles y al hacer click en cada una de las categorías las filtradas según el nombre seleccionado. Cada remera tiene su titulo o nombre, imagen, porcentaje de descuento, precio anterior y con descuento, un botón detalles y el stock disponible. Al hacer click en el botón detalles se accede a una breve descripción de la misma , junto con su título o nombre, imagen, código de artículo, un contador para colocar la cantidad que uno quiere y un botón para agregar al carrito. Si se clickea el botón agregar y en el contador hay una cantidad mayor a 0 se despliega una alerta indicando que se ha agregado una cantidad de artículos al carrito. En el carrito del navbar aparecerá la cantidad en un circulo rojo arriba del mismo. Si se hace click en este, podemos ver cada articulo agregado con su imagen, cantidad, precio, precio total y un botón eliminar en el caso de que se quiera sacar del mismo. También posee un botón vaciar para eliminar todos los artículos  y una tabla que tiene su número de pedido, subtotal, descuento a aplicar, el total y un botón confirmar pedido. Este último nos genera la orden que se guarda en firebase.
 
-In the project directory, you can run:
+Comenzando 🚀
 
-### `npm start`
+Como poder usar o ver este repositorio.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Deployment 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Haciendo click en el siguiente enlace podes ver como funciona. 
+o bien clonando el repositorio en una carpeta creada, como? posicionandote en la carpeta creada, abriendo la terminal de gitbash descargado desde https://git-scm.com/downloads y ejecutando el siguiente comando "git clone https://github.com/JuanMelinir/React-Coderhouse.git". Por último posicionarse en la carpeta creada y luego entrar a la carpeta que se nos generó al hacer el comando clone en el gitbash, en ésta abrir nuevamente el terminal gitbash y ejecutar el siguiente comando "npm i", con eso instalaremos todas las dependencias usadas en el proyecto.
 
-### `npm test`
+Construido con 🛠️
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+React 8.3.1
 
-### `npm run build`
+react-dom 17.0.2
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+react-router-dom 6.2.1
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+bootstrap 5
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+@material-ui/core 4.12.3
 
-### `npm run eject`
+@material-ui/icons 4.11.2
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Autor ✒️
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Juan Matías Meliñir
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Licencia 📄
 
-## Learn More
+Este proyecto está bajo la Licencia (Libre, espero que te sea de ayuda)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Expresiones de Gratitud 🎁
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Comenta a otros sobre este proyecto 📢
+Invita una cerveza 🍺 o un café ☕ a alguien del equipo.
+Da las gracias públicamente 🤓.
+etc.
